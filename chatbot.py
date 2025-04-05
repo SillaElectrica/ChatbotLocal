@@ -4,7 +4,7 @@ import unicodedata
 
 
 app = Flask(__name__)
-CORS(app)
+
 
 
 responses = {
@@ -179,4 +179,4 @@ def chat():
     return jsonify({'reply': random.choice(default_responses)})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=os.getenv(), default=5000)
