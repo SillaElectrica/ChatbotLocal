@@ -4,7 +4,7 @@ from flask_cors import CORS
 import os  # Añade este import
 
 app = Flask(__name__)
-CORS(app, resources={r"/chat": {"origins": "*"}})  
+CORS(app, resources={r"/chat": {"origins": "*", "methods": ["POST"]}})
 
 # ... resto de tu código ...
 
@@ -146,11 +146,15 @@ responses = {
 
 
 def remove_accents(input_str):
-    nfkd_form = unicodedata.normalize('NFKD', input_str)
-    return ''.join([c for c in nfkd_form if not unicodedata.combining(c)])
+    try:
+        nfkd_form = unicodedata.normalize('NFKD', input_str)
+        return ''.join([c for c in nfkd_form if not unicodedata.combining(c)])
+    except:
+        return input_str  # Fallback seguro
 
 @app.route('/chat', methods=['POST'])
 def chat():
+
     data = request.get_json()
     user_input = data.get('message', '').lower().strip()
 
