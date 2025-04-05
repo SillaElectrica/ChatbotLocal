@@ -140,6 +140,7 @@ responses = {
 
 
 
+
 def remove_accents(input_str):
     nfkd_form = unicodedata.normalize('NFKD', input_str)
     return ''.join([c for c in nfkd_form if not unicodedata.combining(c)])
@@ -149,24 +150,18 @@ def chat():
     data = request.get_json()
     user_input = data.get('message', '').lower().strip()
 
-
     user_input = remove_accents(user_input)
 
-
     for key, value in responses.items():
-
         normalized_key = remove_accents(key.lower())
         if user_input == normalized_key:
             return jsonify({'reply': value["respuesta"]})
 
-
     for key, value in responses.items():
         for keyword in value["palabras_clave"]:
-  
             normalized_keyword = remove_accents(keyword.lower())
             if normalized_keyword in user_input:
                 return jsonify({'reply': value["respuesta"]})
-
 
     default_responses = [
         "No estoy seguro de entender. ¿Podrías reformular tu pregunta?",
@@ -178,4 +173,4 @@ def chat():
     return jsonify({'reply': random.choice(default_responses)})
 
 if __name__ == '__main__':
-    app.run(debug=True, host="0.0.0.0", port=os.getenv(), default=5000)
+    app.run(debug=True, host="0.0.0.0", port=int(os.getenv('PORT', 5000)))
