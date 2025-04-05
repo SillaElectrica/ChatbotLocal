@@ -1,9 +1,12 @@
 from flask import Flask, request, jsonify
 import unicodedata
 from flask_cors import CORS 
+import os  # Añade este import
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/chat": {"origins": "*"}})  
+
+# ... resto de tu código ...
 
 print("¡Hola, mundo!")
 
