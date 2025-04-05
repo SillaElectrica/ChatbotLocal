@@ -5,6 +5,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
+print("¡Hola, mundo!")
 
 responses = {
     "quiénes somos": {
