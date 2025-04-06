@@ -56,7 +56,7 @@ responses = {
         "palabras_clave": ["errores", "no es imprimible", "no esta bien mi modelo", "mi modelo tiene un problema", "mi modelo tiene un error", "tengo un error con mi modelo", "tengo un problema con mi custom"]
     },
     "Tamaño maximo de impresion": {
-        "respuesta": "El modelo impreso puede alcanzar un tamaño máximo de 22 cm tanto en altura como en anchura, lo que garantiza un equilibrio entre detalle, estabilidad y compatibilidad con el proceso de impresión.",
+        "respuesta": "El modelo impreso puede alcanzar un tamaño máximo de 12.7 x 8 x 16 cm, lo que garantiza un equilibrio entre detalle, estabilidad y compatibilidad con el proceso de impresión.",
         "palabras_clave": ["de que tamaño", "tamaño maximo", "Que tan grande", "se podra imprimir por el tamaño", "y si es muy grande", "se podra imprimir", "y si no cabe"]
     },
     "cómo puedo hacer un pedido": {
