@@ -17,7 +17,7 @@ responses = {
     },
     "tiempo estimado de la entrega": {
         "respuesta": "El tiempo estimado de entrega depende del proyecto, pero suele oscilar entre 3 y 7 días hábiles después de finalizar la impresión. Para proyectos más complejos o personalizados, el tiempo puede extenderse hasta 10 días hábiles.",
-        "palabras_clave": ["en cuanto llega", "tiempo estimado", "cuando llega", "cuanto demora", "cuando llega el envio", "cual es el plazo", "cuando entregan", "cuando llega", "cuando tarda en llegar", "cuanto tarda en llegar", "cua es el tiempo estimado", "cuando me llegara", "aproximadamente en cuanto", "aproximadamente cuando", "cuando entrega", "cuando me llega mi pedido", "cuando me llega mi entrega", "cuando se hacen entragas", "cuando entregas"]
+        "palabras_clave": ["como en cuanto estara", "cuando estara", "cuando llegara", "cuanto tiempo tomara", "cuanto tiempo tardara","cuanto tardara", "cuanto tomara de tiempo","en cuanto llega", "tiempo estimado", "cuando llega", "cuanto demora", "cuando llega el envio", "cual es el plazo", "cuando entregan", "cuando llega", "cuando tarda en llegar", "cuanto tarda en llegar", "cua es el tiempo estimado", "cuando me llegara", "aproximadamente en cuanto", "aproximadamente cuando", "cuando entrega", "cuando me llega mi pedido", "cuando me llega mi entrega", "cuando se hacen entragas", "cuando entregas"]
     },
     "qué materiales trabajamos en la empresa": {
         "respuesta": "En nuestra empresa, nos especializamos principalmente en el uso de resina fotopolimérica a base de agua, un material innovador y de alta calidad que nos permite obtener resultados excepcionales en cada proyecto.",
@@ -56,7 +56,7 @@ responses = {
         "palabras_clave": ["errores", "no es imprimible", "no esta bien mi modelo", "mi modelo tiene un problema", "mi modelo tiene un error", "tengo un error con mi modelo", "tengo un problema con mi custom"]
     },
     "Tamaño maximo de impresion": {
-        "respuesta": "El modelo impreso puede alcanzar un tamaño máximo de 22 cm tanto en altura como en anchura, lo que garantiza un equilibrio entre detalle, estabilidad y compatibilidad con el proceso de impresión.",
+        "respuesta": "El modelo impreso puede alcanzar un tamaño máximo de 12.7 x 8 x 16 cm, lo que garantiza un equilibrio entre detalle, estabilidad y compatibilidad con el proceso de impresión.",
         "palabras_clave": ["de que tamaño", "tamaño maximo", "Que tan grande", "se podra imprimir por el tamaño", "y si es muy grande", "se podra imprimir", "y si no cabe"]
     },
     "cómo puedo hacer un pedido": {
@@ -132,7 +132,7 @@ responses = {
   "palabras_clave": ["llaveros", "llavero personalizado", "hacen llaveros", "quiero un llavero", "pueden hacer llavero", "personalizar llavero"]
 },
 "que colores de resina manejan": {
-  "respuesta": "Trabajamos principalmente con resina azul para usarlo como base, pero tambien podemos imprimir en resina blanca o negra bajo pedido especial. En general, el color base no afecta la calidad del modelo, ya que muchos clientes los pintan despues.",
+  "respuesta": "Trabajamos principalmente con resina azul para usarlo como base, pero tambien podemos imprimir en resina blanca bajo pedido especial. En general, el color base no afecta la calidad del modelo, ya que muchos clientes los pintan despues.",
   "palabras_clave": ["colores resina", "color de la resina", "de que color imprimen", "que color usan", "puede ser otro color", "colores disponibles", "puede ser blanca", "puede ser negra", "resina blanca", "resina gris", "resina negra"]
 }
 
@@ -142,7 +142,7 @@ responses = {
 
 }
 
-
+#hola
 
 
 def remove_accents(input_str):
